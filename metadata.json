@@ -1,0 +1,8 @@
+{
+  "name": "Diamant SMP",
+  "description": "Сайт українського Майнкрафт сервера Diamant SMP з магазином донату, особистим кабінетом, статистикою гравців, лідербордами та інтеграцією платіжного шлюзу.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

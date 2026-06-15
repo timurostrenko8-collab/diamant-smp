@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-mine-darker: #0a0a0c;
+  --color-mine-dark: #121216;
+  --color-mine-card: rgba(255, 255, 255, 0.04);
+  --color-mine-border: rgba(255, 255, 255, 0.1);
+  --color-mine-emerald: #4f46e5; /* Shift Emerald color to high-contrast Indigo */
+  --color-mine-gold: #8b5cf6; /* Switch to Purple accent */
+}
+
+body {
+  background-color: var(--color-mine-darker);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom modern Bento scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-mine-darker);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 99px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f46e5;
+}
+
+/* Custom fine Bento background coordinates grid */
+.coords-grid {
+  background-size: 50px 50px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Glass effect card and glows */
+.bento-card {
+  background: rgb(18, 18, 22);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 24px; /* rounded-3xl as in guidelines */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+  border-color: rgba(79, 70, 229, 0.3);
+  box-shadow: 0 10px 30px -15px rgba(79, 70, 229, 0.15);
+}
+
+.glow-indigo {
+  box-shadow: 0 0 30px rgba(79, 70, 229, 0.15);
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.15);
+}
+
